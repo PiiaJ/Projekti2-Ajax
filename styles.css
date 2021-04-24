@@ -6,6 +6,16 @@ input[type=button]
     border-radius: 3px;
     font-weight: bold;
 }
+input[type=button]:focus 
+{
+    background-color:lightskyblue;
+    border-color: skyblue; 
+}
+
+input[type=button]:hover
+{
+    background-color: lightsteelblue;
+}
 
 button 
 {
@@ -14,6 +24,16 @@ button
     background-color: lightgrey;
     border-radius: 3px;
     font-weight: bold;
+}
+
+button:hover
+{
+    background-color: lightsteelblue;
+}
+
+button:focus {
+    background-color:lightskyblue;
+    border-color: skyblue;
 }
 
 li
@@ -25,7 +45,7 @@ li
 
 ul 
 {
-    background-color: honeydew;
+    background-color:ghostwhite;
     margin: 5px;
     padding: auto;
 }
