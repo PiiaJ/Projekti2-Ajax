@@ -8,7 +8,7 @@ document.getElementById('Spettacoli').addEventListener('click', getEntertainment
 document.getElementById('Esteri').addEventListener('click', getForeign);
 document.getElementById('Economia').addEventListener('click', getEconomics);
 document.getElementById('Cultura').addEventListener('click', getCulture);
-document.getElementById('CorriereTV').addEventListener('click', getCinemaTV);
+document.getElementById('CorriereTV').addEventListener('click', getCorriereTV);
 document.getElementById('Technologia').addEventListener('click', getTech);
 document.getElementById('Sport').addEventListener('click', getSport);
 document.getElementById('Motori').addEventListener('click', getMotors);
@@ -16,8 +16,9 @@ document.getElementById('Moda').addEventListener('click', getFashion);
 document.getElementById('Animali').addEventListener('click', getAnimals);
 document.getElementById('Salute').addEventListener('click', getHealth);
 
-
+// funktio hakee ja tulostaa kaikki viimeisimmät uutisotsikot julkaisuaikoineen
 function getAllData() {
+    // haetaan xml-tiedot
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
@@ -33,21 +34,23 @@ function getAllData() {
             var links = data.getElementsByTagName('link');
             var published = data.getElementsByTagName('pubDate');
 
-            // tarkistetaan, onko uutisotsikkolista tyhjä, jos ei, tyhjennetään
+            // tyhjennetään li-elementit ul-elementin sisältä
             var listing = document.getElementById('showList');
 
             emptyList(listing);
 
-            // taulukot käydään läpi, titlet alkavat indeksistä 2, julkaisuajat indeksistä 0
+            // taulukot käydään läpi, titlet ja linkit alkavat indeksistä 2, julkaisuajat indeksistä 0
             for (var i=2; i < titles.length; i++){
+                // tehdään otsikkoteksti linkiksi
                 var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
-
+                // lisätään linkit listaan ja muotoillaan
                 listing.innerHTML += '<li><strong>' + titleWithLink + '</strong> (' + published[i-2].innerHTML + ')</li>';
             }
         }
     }
 }
 
+// funktio hakee uutiskatsaukset
 function getColumns() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -73,6 +76,7 @@ function getColumns() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Cronache') {
+                    // haetaan ja tulostetaan linkkeinä ne otsikot, joiden kategoriaksi on merkitty Cronache
                     var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
@@ -81,6 +85,7 @@ function getColumns() {
     }
 }
 
+// funktio hakee terveysuutiset
 function getHealth() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -114,6 +119,7 @@ function getHealth() {
     }
 }
 
+// funktio hakee poliittiset uutiset
 function getPolitics() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -147,6 +153,7 @@ function getPolitics() {
     }
 }
 
+// funktio hakee sekalaisia uutisia
 function getOther() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -179,6 +186,8 @@ function getOther() {
         }
     }
 }
+
+// funktio hakee urheilu-uutisia
 function getSport() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -212,6 +221,7 @@ function getSport() {
     }
 }
 
+// funktio hakee pääkirjoituksia
 function getEditorials() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -245,6 +255,7 @@ function getEditorials() {
     }
 }
 
+// funktio hakee eläimiin liittyviä uutisia
 function getAnimals() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -278,7 +289,8 @@ function getAnimals() {
     }
 }
 
-function getCinemaTV() {
+// funktio hakee uutisia, jotka ovat videoklippeinä
+function getCorriereTV() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
@@ -311,6 +323,7 @@ function getCinemaTV() {
     }
 }
 
+// funktio hakee talousuutisia
 function getEconomics() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -344,6 +357,7 @@ function getEconomics() {
     }
 }
 
+// funktio hakee viihdeuutisia
 function getEntertainment() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -377,6 +391,7 @@ function getEntertainment() {
     }
 }
 
+// funktio hakee ulkomaanuutisia
 function getForeign() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -410,6 +425,7 @@ function getForeign() {
     }
 }
 
+// funktio hakee kulttuuriuutisia
 function getCulture() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -443,6 +459,7 @@ function getCulture() {
     }
 }
 
+// funktio hakee autoihin liittyviä uutisia
 function getMotors() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -476,6 +493,7 @@ function getMotors() {
     }
 }
 
+// funktio hakee teknologiauutisia
 function getTech() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -509,6 +527,7 @@ function getTech() {
     }
 }
 
+// funktio hakee muotiin liittyviä uutisia
 function getFashion() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
@@ -541,8 +560,6 @@ function getFashion() {
         }
     }
 }
-
-
 
 // lapsien poistaminen, lista tyhjenee
 function emptyList(parent) {
