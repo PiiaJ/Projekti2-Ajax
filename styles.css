@@ -1,0 +1,45 @@
+input[type=button]
+{
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+button 
+{
+    margin: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+li
+{
+    margin: 5px;
+    padding: auto;
+    color: darkorchid;
+}
+
+ul 
+{
+    background-color: honeydew;
+    margin: 5px;
+    padding: auto;
+}
+
+a:link
+{
+    color:darkorchid;
+}
+
+a:visited 
+{
+    color: deeppink;
+}
+
+p{
+    margin: 5px;
+}
