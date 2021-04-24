@@ -24,8 +24,7 @@ function getAllData() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -56,8 +55,7 @@ function getColumns() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -90,8 +88,7 @@ function getHealth() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -124,8 +121,7 @@ function getPolitics() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -158,8 +154,7 @@ function getOther() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -191,8 +186,7 @@ function getSport() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -225,8 +219,7 @@ function getEditorials() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+  
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -259,8 +252,7 @@ function getAnimals() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -293,8 +285,7 @@ function getCinemaTV() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -327,8 +318,7 @@ function getEconomics() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -361,8 +351,7 @@ function getEntertainment() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -395,8 +384,7 @@ function getForeign() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -429,8 +417,7 @@ function getCulture() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -463,8 +450,7 @@ function getMotors() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -497,8 +483,7 @@ function getTech() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -531,8 +516,7 @@ function getFashion() {
 
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            console.log ( xmlhttp.responseText);
-        
+
             // tallennetaan xml muuttujaan
             var data = xmlhttp.responseXML;
 
@@ -567,25 +551,5 @@ function emptyList(parent) {
     }
 }
 
-/*
-function getOther() {
-    var data = getAjaxData();
-    console.log(data);
-}
-*/
-/*
-function getAjaxData() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
-    xmlhttp.send();
 
-    xmlhttp.onreadystatechange=function() {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200){
-            // tallennetaan haetut tiedot muuttujaan
-            var data = xmlhttp.responseXML;
-            return data;
-        }
-    }
-}
-*/
 
