@@ -19,7 +19,7 @@ document.getElementById('Salute').addEventListener('click', getHealth);
 
 function getAllData() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -51,7 +51,7 @@ function getAllData() {
 
 function getColumns() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -85,7 +85,7 @@ function getColumns() {
 
 function getHealth() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -119,7 +119,7 @@ function getHealth() {
 
 function getPolitics() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -153,7 +153,7 @@ function getPolitics() {
 
 function getOther() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -186,7 +186,7 @@ function getOther() {
 }
 function getSport() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -220,7 +220,7 @@ function getSport() {
 
 function getEditorials() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -254,7 +254,7 @@ function getEditorials() {
 
 function getAnimals() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -288,7 +288,7 @@ function getAnimals() {
 
 function getCinemaTV() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -322,7 +322,7 @@ function getCinemaTV() {
 
 function getEconomics() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -356,7 +356,7 @@ function getEconomics() {
 
 function getEntertainment() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -390,7 +390,7 @@ function getEntertainment() {
 
 function getForeign() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -424,7 +424,7 @@ function getForeign() {
 
 function getCulture() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -458,7 +458,7 @@ function getCulture() {
 
 function getMotors() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -492,7 +492,7 @@ function getMotors() {
 
 function getTech() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
@@ -526,7 +526,7 @@ function getTech() {
 
 function getFashion() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","http://xml2.corriereobjects.it/rss/homepage.xml",true);
+    xmlhttp.open("GET","https://xml2.corriereobjects.it/rss/homepage.xml",true);
     xmlhttp.send();
 
     xmlhttp.onreadystatechange=function() {
