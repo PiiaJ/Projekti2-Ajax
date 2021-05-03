@@ -77,7 +77,7 @@ function getColumns() {
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Cronache') {
                     // haetaan ja tulostetaan linkkeinä ne otsikot, joiden kategoriaksi on merkitty Cronache
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -111,7 +111,7 @@ function getHealth() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Salute') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -145,7 +145,7 @@ function getPolitics() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Politica') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -179,7 +179,7 @@ function getOther() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Corriere') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -213,7 +213,7 @@ function getSport() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Sport') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -247,7 +247,7 @@ function getEditorials() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Editoriali') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -281,7 +281,7 @@ function getAnimals() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Animali') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -315,7 +315,7 @@ function getCorriereTV() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'CorriereTV') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -349,7 +349,7 @@ function getEconomics() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Economia') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -383,7 +383,7 @@ function getEntertainment() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Spettacoli') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -417,7 +417,7 @@ function getForeign() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Esteri') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -451,7 +451,7 @@ function getCulture() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Cultura') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -485,7 +485,7 @@ function getMotors() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Motori') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -519,7 +519,7 @@ function getTech() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Tecnologia') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
@@ -553,7 +553,7 @@ function getFashion() {
             // taulukot käydään läpi, titlet ja listit alkavat indeksistä 2, kategoriat indeksistä 0
             for (var i=2; i < titles.length; i++){
                 if(categories[i-2].innerHTML == 'Moda') {
-                    var titleWithLink = '<a href=' + links[i].innerHTML + '>' + titles[i].innerHTML + '</a>';
+                    var titleWithLink = '<a href=' + links[i].innerHTML + ' target="_blank">' + titles[i].innerHTML + '</a>';
                     listing.innerHTML += '<li>' + titleWithLink + '</li>';
                 }
             }
